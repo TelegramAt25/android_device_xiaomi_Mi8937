@@ -12,6 +12,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk
 # Inherit some common HavocOS stuff.
 $(call inherit-product, vendor/havoc/config/common_full_phone.mk)
 
+# Include private signing keys
+-include vendor/extra/product.mk
+
 # Kernel
 TARGET_KERNEL_VERSION := 4.19
 
